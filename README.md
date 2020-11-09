@@ -131,6 +131,3 @@ Feedstock Maintainers
 
 * [@mjhoptics](https://github.com/mjhoptics/)
 
-
-<!-- dummy commit to enable rerendering -->
-
