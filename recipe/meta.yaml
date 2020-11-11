@@ -11,7 +11,7 @@ source:
   sha256: b04308201087a3dd6ba2083e3ef58cc852ea597bb0e5d3545c8b6bdb074ffb7c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
@@ -26,7 +26,7 @@ requirements:
     - attrs >=19.1.0
     - ipywidgets >=7.5.1
     - json_tricks >=3.13.2
-    - matplotlib >=3.1.1
+    - matplotlib-base >=3.1.1
     - numpy >=1.17.1
     - opticalglass >=0.6.5
     - pandas >=0.25.1
