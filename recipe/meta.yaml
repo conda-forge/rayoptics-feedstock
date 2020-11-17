@@ -1,5 +1,5 @@
 {% set name = "rayoptics" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b04308201087a3dd6ba2083e3ef58cc852ea597bb0e5d3545c8b6bdb074ffb7c
+  sha256: 2df5d26accffda778057c4d570625721782292a50b83a120a6389ec6ccf2faf9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
@@ -54,15 +54,15 @@ about:
   license_family: BSD
   license_file: LICENSE
   description: |
-   rayoptics is a Python geometrical optics and image forming optics library.
-   It provides a geometric ray tracing foundation for the analysis of image
-   forming and coherent optical systems. A number of standard geometrical
-   analysis options such as transverse ray and wavefront aberration analysis
-   are provided on this base. Paraxial layout of optical systems is also
-   supported by y-ybar diagrams and graphical editing of paraxial rays in
-   lens layout views. Import of Zemax .zmx and CODEV .seq files is supported.
-   RayOptics can be used in Python scripts, the Python and IPython shells,
-   the Jupyter notebook, and a Qt-based graphical user interface application.
+    rayoptics is a Python geometrical optics and image forming optics library.
+    It provides a geometric ray tracing foundation for the analysis of image
+    forming and coherent optical systems. A number of standard geometrical
+    analysis options such as transverse ray and wavefront aberration analysis
+    are provided on this base. Paraxial layout of optical systems is also
+    supported by y-ybar diagrams and graphical editing of paraxial rays in
+    lens layout views. Import of Zemax .zmx and CODEV .seq files is supported.
+    RayOptics can be used in Python scripts, the Python and IPython shells,
+    the Jupyter notebook, and a Qt-based graphical user interface application.
   doc_url: https://rayoptics.readthedocs.io/
   dev_url: https://github.com/mjhoptics/rayoptics
 
