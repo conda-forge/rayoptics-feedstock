@@ -1,5 +1,5 @@
 {% set name = "rayoptics" %}
-{% set version = "0.8.3" %}
+{% set version = "0.8.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4f8b7987bc65648669881c24f75269864ed5573d091ccc7713f5e61a6702bcca
+  sha256: f2395e249a08ccd6b2a5ac4152dd38f383462e2ff45c48cbd70daa506fdab608
 
 build:
   number: 0
