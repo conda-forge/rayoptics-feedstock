@@ -11,7 +11,7 @@ source:
   sha256: fcd662bec980d777fe133f9295f7fdc7e6eabcc119485669f9747ee6abff829c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
