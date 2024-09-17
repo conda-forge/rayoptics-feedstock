@@ -1,5 +1,5 @@
 {% set name = "rayoptics" %}
-{% set version = "0.9.1" %}
+{% set version = "0.9.2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bf11ebd506ad6093266ecabfcc1c868a4abb60c0108e64a32cb6c2e7fd3059a8
+  sha256: d0683cc1d36c73194055269d7c772a2af5243858741ca68f2f8deb0c073e73c9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
