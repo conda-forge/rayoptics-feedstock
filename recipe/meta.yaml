@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6d5d30de7213f1fb1976bc612eecfae442285b00afc576adaf7a896e0efa1d79
+  sha256: f2b623f52ab6248169cb19aa284df4ff8b696441831c276ad7823ef609a641f2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
