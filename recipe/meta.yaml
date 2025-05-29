@@ -1,6 +1,6 @@
 {% set name = "rayoptics" %}
-{% set version = "0.9.5" %}
-{% set python_min = "3.10" %}
+{% set version = "0.9.7" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2b623f52ab6248169cb19aa284df4ff8b696441831c276ad7823ef609a641f2
+  sha256: d63fd43c71bf4291fb972bbcd2f8830613fd89fb0d5feae9a8adc51d5834a9a9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
@@ -27,22 +27,22 @@ requirements:
   run:
     - python >={{ python_min }}
     - opticalglass >=1.1.0
-    - numpy >=2.1.3
-    - scipy >=1.14.1
-    - matplotlib-base >=3.9.2
+    - numpy >=2.2.6
+    - scipy >=1.15.2
+    - matplotlib-base >=3.10.3
     - pandas >=2.2.3
-    - anytree >=2.12.1
+    - anytree >=2.13.0
     - parsimonious >=0.10.0
     - transforms3d >=0.4.2
     - requests >=2.32.3
-    - packaging >=24.2
+    - packaging >=25.0
     - json_tricks >=3.17.3
     - deprecation >=2.1.0
-    - ipywidgets >=8.1.5
-    - pyside6 >=6.7.3
+    - ipywidgets >=8.1.7
+    - pyside6 >=6.9.0
     - qdarkstyle >=3.2.3
     - qtconsole >=5.6.1
-    - ipython >=8.29.0
+    - ipython >=9.2.0
     - traitlets >=5.14.3
 
 test:
@@ -52,6 +52,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/rayoptics/
