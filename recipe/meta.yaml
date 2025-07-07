@@ -1,5 +1,5 @@
 {% set name = "rayoptics" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d63fd43c71bf4291fb972bbcd2f8830613fd89fb0d5feae9a8adc51d5834a9a9
+  sha256: 81afc2113f438edf6df1649a4cbce67a194d75f50325190ba81477e20d7dc08c
 
 build:
   number: 0
@@ -26,20 +26,20 @@ requirements:
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - opticalglass >=1.1.0
-    - numpy >=2.2.6
-    - scipy >=1.15.2
+    - opticalglass >=1.1.1
+    - numpy >=2.3.1
+    - scipy >=1.16.0
     - matplotlib-base >=3.10.3
     - pandas >=2.2.3
     - anytree >=2.13.0
     - parsimonious >=0.10.0
     - transforms3d >=0.4.2
-    - requests >=2.32.3
+    - requests >=2.32.4
     - packaging >=25.0
     - json_tricks >=3.17.3
     - deprecation >=2.1.0
     - ipywidgets >=8.1.7
-    - pyside6 >=6.9.0
+    - pyside6 >=6.9.1
     - qdarkstyle >=3.2.3
     - qtconsole >=5.6.1
     - ipython >=9.2.0
