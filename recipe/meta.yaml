@@ -1,6 +1,6 @@
 {% set name = "rayoptics" %}
-{% set version = "0.9.7" %}
-{% set python_min = "3.11" %}
+{% set version = "0.9.9" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d63fd43c71bf4291fb972bbcd2f8830613fd89fb0d5feae9a8adc51d5834a9a9
+  sha256: b9cbdbd7f9ea86c93a133a04fb431617f0e3086507a0ee9ba9a09db25bf1a91a
 
 build:
   number: 0
@@ -20,30 +20,31 @@ build:
 requirements:
   host:
     - pip
-    - pyscaffold >=4.3
     - setuptools >=46.1.0
     - setuptools-scm
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - opticalglass >=1.1.0
-    - numpy >=2.2.6
-    - scipy >=1.15.2
-    - matplotlib-base >=3.10.3
-    - pandas >=2.2.3
+    - opticalglass >=2.0.0
+    - zemaxglass >=2.0.0
+    - zmxtools >=0.1.5
+    - numpy >=2.5.1
+    - scipy >=1.18.0
+    - matplotlib-base >=3.11.0
+    - pandas >=3.0.3
     - anytree >=2.13.0
-    - parsimonious >=0.10.0
+    - parsimonious >=0.11.0
     - transforms3d >=0.4.2
-    - requests >=2.32.3
-    - packaging >=25.0
+    - requests >=2.34.2
+    - packaging >=26.2
     - json_tricks >=3.17.3
     - deprecation >=2.1.0
-    - ipywidgets >=8.1.7
-    - pyside6 >=6.9.0
+    - ipywidgets >=8.1.8
+    - pyside6 >=6.11.1
     - qdarkstyle >=3.2.3
-    - qtconsole >=5.6.1
-    - ipython >=9.2.0
-    - traitlets >=5.14.3
+    - qtconsole >=5.7.2
+    - ipython >=9.15.0
+    - traitlets >=5.15.1
 
 test:
   imports:
