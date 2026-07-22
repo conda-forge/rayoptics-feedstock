@@ -11,7 +11,7 @@ source:
   sha256: b9cbdbd7f9ea86c93a133a04fb431617f0e3086507a0ee9ba9a09db25bf1a91a
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - setuptools >=46.1.0
+    - setuptools >=83.0.0
     - setuptools-scm
     - python {{ python_min }}
   run:
