@@ -11,8 +11,10 @@ source:
   sha256: b9cbdbd7f9ea86c93a133a04fb431617f0e3086507a0ee9ba9a09db25bf1a91a
 
 build:
-  number: 2
+  number: 4
   noarch: python
+  script_env:
+    - NPY_VER=2.5.1
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
   script: {{ PYTHON }} -m pip install . -vv
