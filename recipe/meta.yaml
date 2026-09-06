@@ -1,5 +1,5 @@
 {% set name = "rayoptics" %}
-{% set version = "0.9.9" %}
+{% set version = "0.9.10" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b9cbdbd7f9ea86c93a133a04fb431617f0e3086507a0ee9ba9a09db25bf1a91a
+  sha256: 0b7cbfc4e3e7e38b14b8615de8e74b0b57b3a800356d30b830fb62cc89159f18
 
 build:
-  number: 7
+  number: 0
   noarch: python
   entry_points:
     - rayoptics = rayoptics.qtgui.rayopticsapp:main
@@ -26,8 +26,8 @@ requirements:
     - numpy
   run:
     - python >={{ python_min }}
-    - opticalglass >=2.0.0
-    - zemaxglass >=2.0.0
+    - opticalglass >=2.0.2
+    - zemaxglass >=2.0.1
     - zmxtools >=0.1.5
     - numpy >=2.5.1
     - scipy >=1.18.0
